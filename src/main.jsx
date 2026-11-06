@@ -6,8 +6,8 @@ import axios from 'axios';
 import { io } from 'socket.io-client';
 import './styles.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:5000';
+const API_URL = import.meta.env.VITE_API_URL || 'https://mediqueue-backend-szxv.onrender.com/api';
+const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'https://mediqueue-backend-szxv.onrender.com';
 const API = axios.create({ baseURL: API_URL });
 const today = () => new Date().toISOString().slice(0, 10);
 function readSession() {
